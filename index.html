@@ -314,30 +314,41 @@
                 transform: translateY(0);
             }
         }
-
         .date-lunar {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--text-red);
-            letter-spacing: 2px;
-            text-align: center;
-            line-height: 1.6;
-            text-transform: uppercase;
-            flex: 1;
-            min-width: 0;
-        }
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 0.85rem;
+                    font-weight: 500;
+                    color: var(--text-red);
+                    letter-spacing: 4px;
+                    line-height: 1.6;
+                    text-transform: uppercase;
+                    flex: 1;
+                    min-width: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
-        .date-year {
+        .lunar-line {
+            display: block;
+            padding-right: 4px;
+        }
+              .date-year {
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-red);
-            letter-spacing: 10px;
-            padding-top: 10px;
+            line-height: 2;
+            font-variant-numeric: lining-nums tabular-nums;
+            font-feature-settings: 'lnum' 1, 'tnum' 1;
+            align-self: center;
+            top: 10rem;
+
+
+            
+            text-align: center;
             opacity: 0;
         }
-
         .loaded .date-year {
             animation: fadeInUp 0.8s ease forwards 3.4s;
         }
@@ -825,7 +836,7 @@
                 <div class="date-middle">
                     <div class="date-dow">Thứ<br>Ba</div>
                     <div class="date-day">28</div>
-                    <div class="date-lunar">15/06<br>Bính Ngọ</div>
+                <div class="date-lunar"><span class="lunar-line">15/06</span><span class="lunar-line">Bính Ngọ</span></div> 
                 </div>
                 <div class="date-divider"></div>
                 <div class="date-year">2026</div>
