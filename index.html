@@ -119,7 +119,7 @@
             font-family: 'Daughter', 'Pinyon Script', cursive;
             font-size: 7.5rem;
             color: #a83060;
-            flex: 1;
+            flex: 0 0 240px;
             font-weight: 400;
             line-height: 1;
             opacity: 0;
@@ -288,6 +288,8 @@
             font-weight: 700;
             color: var(--text-red);
             line-height: 0.85;
+            font-variant-numeric: lining-nums tabular-nums;
+            font-feature-settings: 'lnum' 1, 'tnum' 1;
             align-self: center;
             position: relative;
             top: -0.15em;
@@ -640,6 +642,7 @@
             .name-txt {
                 font-size: 5rem;
                 max-width: 160px;
+                flex: 0 0 160px;
             }
 
             .center-group {
@@ -701,6 +704,7 @@
             .name-txt {
                 font-size: 2.8rem;
                 max-width: 100px;
+                flex: 0 0 100px;
             }
 
             .center-group {
